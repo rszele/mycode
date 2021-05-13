@@ -1,7 +1,7 @@
 
 
 # string is what we're checking to see if it's a pangram
-string= "python can be really challenging but really rewarding to learn"
+string= input("test a pangram")
 
 # we'll use alphabet to check it against
 alphabet= "abcdefghijklmnopqrstuvwxyz"
@@ -11,13 +11,6 @@ flag= True
 
 # newstring will be the new string we make
 newstring= ""
-clear
-
-
-string= "the brown fox jumps over the lazy dog"
-alphabet= "abcdefghijklmnopqrstuvwxyz"
-flag= True
-newstring= ""
 
 for everychar in string.lower():
     if everychar in alphabet:
@@ -25,16 +18,6 @@ for everychar in string.lower():
 
 for letter in alphabet:
     if letter in newstring:
-        print(letter)
+        pass
     else:
-        print(f"(letter)is not in (string)!")
-        
-:qw
-
-
-chmod u+x forloop1.py
-mkdir /home/student/mycode/netfunct01
-exit
-%
-i
-
+        print(f"{letter} is not in {string}!")
